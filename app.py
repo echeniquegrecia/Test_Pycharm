@@ -9,6 +9,10 @@ app = Flask(__name__)
 def hello_world():
     return test()
 
+@app.test('/test')
+def test():
+    return test()
+
 
 if __name__ == '__main__':
     app.run()
